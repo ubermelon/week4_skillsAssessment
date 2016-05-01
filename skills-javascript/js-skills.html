@@ -370,6 +370,11 @@ $('#kittenz-rule').dblclick(function() {
 
 <script>
   // put your code here
+  document.getElementById('agreeable-form').addEventListener('submit', function(evt) {
+    evt.preventDefault();
+    var agree = document.getElementById('favorite-food-input').value;
+    document.getElementById('agreeable-text').innerHTML = "I like " + agree + " too!";
+  });
 </script>
 
 <div class="hint">

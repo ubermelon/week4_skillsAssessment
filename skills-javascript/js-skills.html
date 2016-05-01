@@ -252,8 +252,12 @@ button.addEventListener('click', reverseString);
   <input type="button" class="tricky-to-find" value="Pop-Up Please!">
 </fieldset>
 
+<script src="https://code.jquery.com/jquery.js"> </script>
 <script>
   // code here for above problem
+  $('.tricky-to-find').on('click', function () {
+    alert("This is an alertbox using jQuery.");
+  });
 </script>
 
 <div class="hint">
@@ -281,6 +285,10 @@ button.addEventListener('click', reverseString);
 
 <script>
   // put your code here
+$('#kittenz-rule').dblclick(function() {
+  $('#kittenz-rule').attr('src', "http://puppytoob.toobnetwork.com/wp-content/uploads/sites/3/2015/05/21.jpg");
+});
+  
 </script>
 
 <div class="hint">
@@ -308,12 +316,17 @@ button.addEventListener('click', reverseString);
 
 <fieldset>
   <img src="http://mytrial.typepad.com/.a/6a0147e199a17d970b0153906b3209970b-pi"
-      id="cute-porcupine-image" style="display: none">
+       id="cute-porcupine-image" style="display: none">
   <input type="button" id="make-a-porcupine" value="I Want a Porcupine!">
 </fieldset>
 
 <script>
   // put your code here
+  $('#make-a-porcupine').on('click', function() {
+    setTimeout(function() {
+      $('#cute-porcupine-image').fadeIn(5000);
+    }, 1000);
+  });
 </script>
 
 <div class="hint">
